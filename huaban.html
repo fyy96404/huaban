@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自制画板</title>
+    <link rel="stylesheet" href="自制画板.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+<body>
+    <main>
+
+        <ul class="main_top">
+
+                    <li id="new" class="iconfont icon-msnui-new"></li>
+                    <li id="save" class="iconfont icon-baocun">
+                        <a href="" class="save1"></a>
+                    </li>
+                    <li class="splice iconfont icon-caiqie"></li>
+                    <li class="Revoke iconfont icon-chexiao"></li>
+                     <li class="text iconfont icon-wenben-copy"></li>
+                    <li class="clear iconfont icon-qingkong"> </li>
+                    <li id="Magnifier">放大镜</li>
+                    <li id="reverse">反向</li>
+                    <li id="reverseH">变灰</li>
+                    <li id="linew" class="iconfont icon-cuxixiantiao">
+                        <input type="range" min="1" max="30" step="2" value="2" id="linewe">
+                    </li>
+        </ul>
+
+        <ul class="main_left">
+            <div style="font-size:40px;position: absolute;top: 10px;left: 40px;" class="iconfont icon-huaban">
+                画板</div>
+            <li id="stroke" class="iconfont icon-saomiaokuangbianjiao"></li>
+            <li id="sc" ><input type="color" width="50px" height="50px"></li>
+            <li id="fill" class="iconfont icon-icon"></li>
+            <li id="fc"><input type="color" width="50px" height="50px"></li>
+
+                <li class="circular iconfont icon-pan_icon"></li>
+                <li class="line iconfont icon-xian"></li>
+                <li class="round iconfont icon-yuan"></li>
+                <li class="wujiao iconfont icon-wujiaoxing"></li>
+                <li class="pencil iconfont icon-duojiaoxing"> </li>
+                   <!--<input type="text" placeholder="请输入角数" id="shuru" value="">-->
+                <li class="juxing iconfont icon-juxing"></li>
+                <li class="puly iconfont icon-duobianxing"></li>
+                <li class="eraser1 iconfont icon-xiangpi"></li>
+        </ul>
+        <div class="main_right">
+            <canvas width="800" height="380"></canvas>
+            <div class="eraser"></div>
+            <div class="opacity"></div>
+            <div id="splice"></div>
+        </div>
+    </main>
+    <script src="自制画板.js"></script>
+    <script src="自制画板面向对象.js"></script>
+</body>
+</html>
